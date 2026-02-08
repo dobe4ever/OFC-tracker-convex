@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #0f172a;
+  --primary: #f97316; /* orange-500 */
+  --primary-hover: #ea580c; /* orange-600 */
+}
+
+body {
+  font-family: "Inter Variable", sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+.auth-input-field {
+  @apply w-full px-4 py-3 rounded-lg bg-white border border-slate-200 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all shadow-sm;
+}
+
+.auth-button {
+  @apply w-full px-4 py-3 rounded-lg bg-orange-500 text-white font-semibold hover:bg-orange-600 transition-colors shadow-sm disabled:opacity-50;
+}
